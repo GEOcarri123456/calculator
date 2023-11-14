@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora de Área y Perímetro</title>
+</head>
+<body>
+    <div class="figure-container">
+        <div class="figure" id="square"></div>
+        <div class="figure" id="circle"></div>
+        <div class="figure" id="triangle"></div>
+    </div>
+    
+    <div class="calculator-container">
+        <div class="calculator" id="squareCalculator">
+            <h2>Calculate the area and perimeter of a square</h2>
+            <div class="data-input">
+                <label for="squareSide">Lado:</label>
+                <input type="number" id="squareSide">
+            </div>
+            <button onclick="calculateSquare()">Calcular</button>
+            <button onclick="clearSquare()">Limpiar</button>
+            <div>Área: <span id="squareArea"></span></div>
+            <div>Perímetro: <span id="squarePerimeter"></span></div>
+        </div>
+
+        <div class="calculator" id="circleCalculator">
+            <h2>Calculate the area and perimeter of a circle</h2>
+            <div class="data-input">
+                <label for="circleRadius">Radio:</label>
+                <input type="number" id="circleRadius">
+            </div>
+            <button onclick="calculateCircle()">Calcular</button>
+            <button onclick="clearCircle()">Limpiar</button>
+            <div>Área: <span id="circleArea"></span></div>
+            <div>Perímetro: <span id="circlePerimeter"></span></div>
+        </div>
+
+        <div class="calculator" id="triangleCalculator">
+            <h2>Calculate the area and perimeter of a triangle</h2>
+            <div class="data-input">
+                <label for="triangleSide1">Primer Lado:</label>
+                <input type="number" id="triangleSide1">
+                <label for="triangleSide2">Segundo Lado:</label>
+                <input type="number" id="triangleSide2">
+                <label for="triangleBase">Base:</label>
+                <input type="number" id="triangleBase">
+                <label for="triangleHeight">Altura:</label>
+                <input type="number" id="triangleHeight">
+            </div>
+            <button onclick="calculateTriangle()">Calcular</button>
+            <button onclick="clearTriangle()">Limpiar</button>
+            <div>Área: <span id="triangleArea"></span></div>
+            <div>Perímetro: <span id="trianglePerimeter"></span></div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
